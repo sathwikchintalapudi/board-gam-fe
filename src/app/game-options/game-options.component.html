@@ -1,0 +1,27 @@
+<h1>Welcome to Mancala game!!</h1>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+      <mat-card (click)="createNewGame()">
+          <mat-card-title class="new-game">
+            Create new game
+          </mat-card-title>
+        </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+      <mat-card>
+          <mat-card-title class="existing-game">
+            Join a game using id
+          </mat-card-title>
+          <div class="form">
+              <mat-form-field color="accent">
+                <input matInput #input class="option-box" placeholder="Enter game id" [(ngModel)]="gameId"
+                  name="gameId">
+                <button color="accent" (click)="joinGame(gameId)" mat-button *ngIf="!!gameId"
+                  matSuffix mat-icon-button>
+                  Join
+                </button>
+              </mat-form-field>
+            </div>
+        </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

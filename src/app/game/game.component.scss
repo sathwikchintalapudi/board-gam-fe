@@ -1,0 +1,119 @@
+.main {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.player-details {
+    font-size: 20px;
+    color:darkred;
+    .player-name {
+        top: 5%;
+        left:17%;
+        position: absolute;
+    }
+    .game-id {
+        top: 5%;
+        left: 45%;
+        position: absolute;
+    }
+    .next-turn {
+        top: 15%;
+        left: 45%;
+        position: absolute;
+    }
+}
+.player-two {
+    top: 20%;
+    left: 45%;
+    position: absolute;
+    font-size: 30px;
+    color: blueviolet;
+}
+.player-one {
+    top: 80%;
+    position: absolute;
+    left: 45%;
+    font-size: 30px;
+    color: blueviolet;
+}
+.refresh-button {
+    top: 90%;
+    position: absolute;
+    left: 45%;
+    font-size: 30px;
+    color: darkred;
+}
+.wrapper {
+    width: 900px;
+    height: 400px;
+    background-color: burlywood;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+
+#left {
+    float: left;
+}
+
+.oval-one {
+    height: 350px;
+    width: 150px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    margin-top: 26px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 60px;
+    color: red;
+}
+
+#right {
+    float: right;
+}
+
+.oval-two {
+    height: 350px;
+    width: 150px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    float: right;
+    margin-top: 26px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 60px;
+    color: red;
+}
+
+#center {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.inner-table {
+    width: 500px;
+    padding-top: 100px;
+    padding-left: 35px;
+}
+
+.button {
+    background-color: antiquewhite;
+    border: none;
+    color: red;
+    height: 80px;
+    width: 70px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 6px 4px;
+    border-radius: 70%;
+}
